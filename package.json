@@ -1,30 +1,32 @@
 {
-  "name": "optical-data-link",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
-  },
-  "devDependencies": {
-    "@capacitor/assets": "^3.0.5",
-    "@capacitor/cli": "^6.2.2",
-    "@types/qrcode": "^1.5.6",
-    "@vitejs/plugin-basic-ssl": "^2.3.0",
-    "typescript": "~6.0.2",
-    "vite": "^8.3.0"
-  },
-  "dependencies": {
-    "@capacitor/android": "^6.2.2",
-    "@capacitor/core": "^6.2.2",
-    "@types/node": "^26.6.2",
-    "jsqr": "^1.4.0",
-    "qrcode": "^1.5.4",
-    "tsx": "^4.23.15",
-    "vite-plugin-pwa": "^1.3.0",
-    "vite-plugin-singlefile": "^2.3.3",
-    "zxing-wasm": "^3.1.4"
-  }
+    "name":  "lumenlink",
+    "private":  true,
+    "version":  "0.0.0",
+    "type":  "module",
+    "scripts":  {
+                    "dev":  "vite",
+                    "build":  "tsc \u0026\u0026 vite build",
+                    "preview":  "vite preview"
+                },
+    "devDependencies":  {
+                            "@capacitor/assets":  "^3.0.5",
+                            "@capacitor/cli":  "^6.2.2",
+                            "@types/qrcode":  "^1.5.6",
+                            "@vitejs/plugin-basic-ssl":  "^2.3.0",
+                            "typescript":  "~6.0.2",
+                            "vite":  "^8.3.0"
+                        },
+    "dependencies":  {
+                         "@capacitor/android":  "^6.2.2",
+                         "@capacitor/core":  "^6.2.2",
+                         "@types/node":  "^26.6.2",
+                         "jsqr":  "^1.4.0",
+                         "qrcode":  "^1.5.4",
+                         "tsx":  "^4.23.15",
+                         "vite-plugin-pwa":  "^1.3.0",
+                         "vite-plugin-singlefile":  "^2.3.3",
+                         "zxing-wasm":  "^3.1.4"
+                     },
+    "description":  "Air-gapped optical data transfer via QR code streams.",
+    "author":  "Murali Adith Krishna Reddy"
 }
