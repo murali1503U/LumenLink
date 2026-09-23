@@ -1,0 +1,172 @@
+/* ── Reset ─────────────────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 16px;
+    --accent: #646cff;
+    --bg:     #111111;
+    --surface:#1e1e1e;
+    --border: #333333;
+    --text:   #e8e8e8;
+    --muted:  #888888;
+    --radius: 10px;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;       /* kill horizontal scroll on mobile */
+    background: var(--bg);
+    color: var(--text);
+}
+
+#app {
+    width: 100%;
+    min-height: 100dvh;
+}
+
+/* ── Shell ─────────────────────────────────────────────────────────────── */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 16px 16px env(safe-area-inset-bottom, 16px);
+    min-height: 100dvh;
+}
+
+/* ── Header ────────────────────────────────────────────────────────────── */
+header { text-align: center; padding: 12px 0 16px; }
+header h1 { font-size: 1.4rem; font-weight: 700; color: var(--accent); }
+header p  { font-size: 0.82rem; color: var(--muted); margin-top: 3px; }
+
+/* ── Tabs ──────────────────────────────────────────────────────────────── */
+.tabs {
+    display: flex;
+    border-bottom: 2px solid var(--border);
+    margin-bottom: 18px;
+}
+
+.tab-btn {
+    flex: 1;
+    padding: 10px;
+    background: none;
+    border: none;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -2px;
+    color: var(--muted);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: color .15s, border-color .15s;
+    -webkit-tap-highlight-color: transparent;
+}
+.tab-btn.active { color: var(--accent); border-bottom-color: var(--accent); }
+
+/* ── Tab panels ────────────────────────────────────────────────────────── */
+.tab-content           { display: none; flex-direction: column; gap: 14px; }
+.tab-content.active    { display: flex; }
+.tab-content h2        { font-size: 1.1rem; font-weight: 600; }
+
+/* ── Form ──────────────────────────────────────────────────────────────── */
+.input-group           { display: flex; flex-direction: column; gap: 6px; }
+.input-group label     { font-size: 0.8rem; font-weight: 600; color: var(--muted);
+                         text-transform: uppercase; letter-spacing: .05em; }
+
+input[type="file"],
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    background: var(--surface);
+    color: var(--text);
+    border: 1.5px solid var(--border);
+    border-radius: var(--radius);
+    font-family: inherit;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color .15s;
+}
+input[type="file"]:focus,
+textarea:focus { border-color: var(--accent); }
+textarea { resize: vertical; min-height: 80px; }
+
+/* ── Buttons ───────────────────────────────────────────────────────────── */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 11px 20px;
+    border: 1.5px solid var(--border);
+    border-radius: var(--radius);
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    background: var(--surface);
+    color: var(--text);
+    transition: opacity .15s, transform .1s;
+    -webkit-tap-highlight-color: transparent;
+}
+.btn:active { transform: scale(0.97); opacity: 0.85; }
+.btn.primary {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+    width: 100%;
+}
+
+/* ── Status ────────────────────────────────────────────────────────────── */
+.status {
+    font-size: 0.85rem;
+    color: var(--muted);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    padding: 8px 12px;
+    border-radius: 8px;
+    min-height: 36px;
+    word-break: break-all;
+}
+
+/* ── QR canvas — never wider than the viewport ─────────────────────────── */
+#sender-canvas {
+    display: block;
+    max-width: 100%;
+    height: auto !important;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    image-rendering: pixelated;
+    background: #fff;
+}
+
+/* ── Camera viewfinder ─────────────────────────────────────────────────── */
+#receiver-video {
+    width: 100%;
+    max-width: 100%;
+    border-radius: var(--radius);
+    background: #000;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+}
+
+/* ── Result card ───────────────────────────────────────────────────────── */
+.card {
+    background: var(--surface);
+    border: 1.5px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px;
+}
+.card h3   { font-size: 1rem; margin-bottom: 10px; }
+.card pre  {
+    white-space: pre-wrap;
+    word-break: break-all;
+    background: var(--bg);
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 0.82rem;
+    max-height: 200px;
+    overflow-y: auto;
+}
+.card img  { max-width: 100%; border-radius: 8px; margin-top: 10px; display: block; }
+#download-btn { margin-top: 12px; width: 100%; }
