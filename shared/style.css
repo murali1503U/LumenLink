@@ -1273,7 +1273,7 @@ details.settings details.subsection .hint {
 
 /* Centered at the bottom of the page, with clear air on both sides: a
    comfortable band below the cards, and the privacy note's own margin below. */
-.home-share {
+.home-share { gap: 16px;
   display: flex;
   justify-content: center;
   margin-top: 36px;
