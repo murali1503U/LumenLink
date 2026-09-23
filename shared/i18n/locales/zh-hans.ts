@@ -42,7 +42,7 @@ export const messages: Messages = {
     shareSite: "分享 LumenLink",
     supportTitle: "免费、开源、无广告",
     supportBodyHtml:
-      '如果 LumenLink 帮到了你，欢迎<a href="#" target="_blank" rel="noopener noreferrer">请我喝杯咖啡</a>。',
+      '如果 LumenLink 帮到了你，欢迎<a href="https://buymeacoffee.com/muraliadithkrishnareddy" target="_blank" rel="noopener noreferrer">请我喝杯咖啡</a>。',
     shareDialogTitle: "分享这个应用",
     shareDialogHint: "用另一台设备的摄像头扫描此码，或把链接发过去。",
     siteLinkAriaLabel: "站点链接",
@@ -276,3 +276,4 @@ export const messages: Messages = {
     switchAction: "查看简体中文版",
   },
 };
+

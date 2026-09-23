@@ -42,7 +42,7 @@ export const messages: Messages = {
     shareSite: "مشاركة LumenLink",
     supportTitle: "مجاني ومفتوح المصدر وبلا إعلانات",
     supportBodyHtml:
-      'إذا جعل LumenLink يومك أسهل، يمكنك أن <a href="#" target="_blank" rel="noopener noreferrer">تشتري لي فنجان قهوة</a>.',
+      'إذا جعل LumenLink يومك أسهل، يمكنك أن <a href="https://buymeacoffee.com/muraliadithkrishnareddy" target="_blank" rel="noopener noreferrer">تشتري لي فنجان قهوة</a>.',
     shareDialogTitle: "مشاركة هذا التطبيق",
     shareDialogHint: "امسح هذا الرمز بكاميرا جهاز آخر، أو أرسل إليه الرابط.",
     siteLinkAriaLabel: "رابط الموقع",
@@ -282,3 +282,4 @@ export const messages: Messages = {
     switchAction: "العرض بالعربية",
   },
 };
+

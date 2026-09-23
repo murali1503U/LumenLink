@@ -42,7 +42,7 @@ export const messages: Messages = {
     shareSite: "LumenLink शेयर करें",
     supportTitle: "मुफ़्त, ओपन सोर्स, बिना विज्ञापन",
     supportBodyHtml:
-      'अगर LumenLink ने आपका काम आसान किया हो, तो आप <a href="#" target="_blank" rel="noopener noreferrer">मुझे एक कॉफ़ी पिला सकते हैं</a>।',
+      'अगर LumenLink ने आपका काम आसान किया हो, तो आप <a href="https://buymeacoffee.com/muraliadithkrishnareddy" target="_blank" rel="noopener noreferrer">मुझे एक कॉफ़ी पिला सकते हैं</a>।',
     shareDialogTitle: "यह ऐप शेयर करें",
     shareDialogHint: "इसे दूसरे डिवाइस के कैमरे से स्कैन करें, या उसे लिंक भेज दें।",
     siteLinkAriaLabel: "साइट लिंक",
@@ -284,3 +284,4 @@ export const messages: Messages = {
     switchAction: "हिन्दी में देखें",
   },
 };
+

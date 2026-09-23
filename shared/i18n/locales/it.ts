@@ -43,7 +43,7 @@ export const messages: Messages = {
     shareSite: "Condividi LumenLink",
     supportTitle: "Gratuito, open source, senza pubblicità",
     supportBodyHtml:
-      'Se LumenLink ti ha semplificato la giornata, puoi <a href="#" target="_blank" rel="noopener noreferrer">offrirmi un caffè</a>.',
+      'Se LumenLink ti ha semplificato la giornata, puoi <a href="https://buymeacoffee.com/muraliadithkrishnareddy" target="_blank" rel="noopener noreferrer">offrirmi un caffè</a>.',
     shareDialogTitle: "Condividi questa app",
     shareDialogHint:
       "Scansiona questo codice con la fotocamera di un altro dispositivo, oppure inviagli il link.",
@@ -297,3 +297,4 @@ export const messages: Messages = {
     switchAction: "Visualizza in italiano",
   },
 };
+

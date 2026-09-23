@@ -43,7 +43,7 @@ export const messages: Messages = {
     shareSite: "LumenLink を共有",
     supportTitle: "無料・オープンソース・広告なし",
     supportBodyHtml:
-      'LumenLink が役に立ったら、<a href="#" target="_blank" rel="noopener noreferrer">コーヒーを1杯おごる</a>ことで応援できます。',
+      'LumenLink が役に立ったら、<a href="https://buymeacoffee.com/muraliadithkrishnareddy" target="_blank" rel="noopener noreferrer">コーヒーを1杯おごる</a>ことで応援できます。',
     shareDialogTitle: "このアプリを共有",
     shareDialogHint: "別のデバイスのカメラでこれをスキャンするか、リンクを送ってください。",
     siteLinkAriaLabel: "サイトのリンク",
@@ -288,3 +288,4 @@ export const messages: Messages = {
     switchAction: "日本語で表示",
   },
 };
+
