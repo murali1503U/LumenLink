@@ -28,7 +28,7 @@ import { MAX_SNIPPET_LABEL } from "../snippet";
 
 const LOCALE_KEY = "lumenlink:locale";
 const BANNER_DISMISSED_KEY = "lumenlink:locale-banner-dismissed";
-const ISSUES_URL = "https://github.com/murali/LumenLink-optical-transfer/issues";
+const ISSUES_URL = "https://github.com/murali1503U/LumenLink/issues";
 
 // Catalog loading lives in its own module because the standalone build swaps
 // it wholesale (loaders.ts → loaders.inline.ts, static imports) — see the
@@ -371,3 +371,4 @@ export function verdictMessage(verdict: FrameVerdict): string | null {
       return null;
   }
 }
+
